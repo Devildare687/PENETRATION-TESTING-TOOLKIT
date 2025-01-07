@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-# Dummy credentials for testing
+# Dummy credentials
 USERNAME = "testuser"
 PASSWORD = "securepassword123"
 

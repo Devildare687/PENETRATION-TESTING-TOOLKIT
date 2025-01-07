@@ -5,17 +5,14 @@ import random
 import socket
 import threading
 
-# Utility to clear the console
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-# Banner display
 def banner():
     print("╔════════════════════════════════════════════╗")
     print("        ⚡ Penetration Testing Toolkit ⚡    ")
     print("╚════════════════════════════════════════════╝")
 
-# Random user-agent generator for brute force login
 def random_user_agent():
     user_agents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
@@ -24,7 +21,6 @@ def random_user_agent():
     ]
     return random.choice(user_agents)
 
-# Brute force login function
 def brute_force_login():
     clear_console()
     print("★ Brute Force Login ★\n")
@@ -43,14 +39,14 @@ def brute_force_login():
 
         try:
             response = session.post(url, data=payload, headers=headers)
-            if "Login successful" in response.text:  # Adjust this condition based on server response
+            if "Login successful" in response.text:
                 print(f"✔ Password found: {password}")
                 return
         except requests.exceptions.RequestException as e:
             print(f"Request failed: {e}")
 
         failed_attempts.append(password)
-        time.sleep(random.uniform(1, 3))  # Simulate human behavior
+        time.sleep(random.uniform(1, 3)) 
 
     print("✘ Password not found.")
     if failed_attempts:
@@ -58,7 +54,6 @@ def brute_force_login():
             f.writelines(f"{pwd}\n" for pwd in failed_attempts)
         print("Failed attempts saved to 'failed_attempts.txt'.")
 
-# Port scanner function
 def scan_port(target, port, open_ports):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -95,7 +90,6 @@ def port_scanner():
     else:
         print("✘ No open ports found.")
 
-# Main menu
 def main_menu():
     while True:
         clear_console()
