@@ -47,7 +47,7 @@ Before running the toolkit, ensure the following requirements are met:
 
 #### 2. Starting the Toolkit
 - **Step 1**: Launch the Flask server using the provided `server.bat` file. This sets up a local test login page (http://127.0.0.1:5000/login) for brute force simulations.
-- **Step 2**: Start the toolkit by running the `tool.bat` file. This automatically opens the toolkit interface, eliminating the need for manual commands.
+- **Step 2**: Start the toolkit by running the `pen_test_toolkit.bat` file. This automatically opens the toolkit interface, eliminating the need for manual commands.
 
 #### 3. How to Test:
 - **Brute Force Module**: Input the target login URL (http://127.0.0.1:5000/login) and specify the test credentials. The tool will simulate multiple login attempts and display the results.
