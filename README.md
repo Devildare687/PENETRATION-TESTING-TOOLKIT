@@ -37,16 +37,20 @@ Before running the toolkit, make sure you have the following installed:
 
 ####2. Starting the Toolkit
 -First, run the Flask server. Use the provided batch file server.bat to start the server. This ensures that the backend runs smoothly without needing to type in the terminal.
+This will host a local test login page (http://127.0.0.1:5000/login) for brute force simulations.
 -Next, launch the toolkit using the tool.bat file. It’s designed to start the tool directly, no manual commands required!
 
 ####3. How to Test:
--Input the target login URL and provide credentials for brute force testing. The tool will simulate login attempts and display results.
--Test port scanning by specifying the IP or URL of the target system.
+-Input the target login URL (http://127.0.0.1:5000/login) and provide credentials for brute force testing. The tool will simulate login attempts and display results.
+-Test port scanning by specifying the IP or URL of the target system. (When prompted for the target URL/IP, use the publicly available test target: scanme.nmap.org. The tool will scan open ports and display the results.)
 ________________________________________
 ###Precautions:
--Run the server first: Always start the Flask server (server.bat) before using the toolkit.
+-**Run the server first**: Always start the Flask server (server.bat) before using the toolkit. 
+Make sure you use inputs for username and password used in flask server file (in this case username is testuser and password is securepassword123, this can be changed later in flask sever file code to ensure it’s working)
+Test responsibly: Use the provided test targets (http://127.0.0.1:5000/login for brute force and scanme.nmap.org for port scanning). Never target unauthorized systems.
 -Simulated Environment: Ensure you test this tool in a controlled or authorized environment. Unauthorized use is strictly prohibited.
 -Batch File Convenience: I’ve created batch files to make the entire process seamless—just double-click, and you’re good to go!
+
 ________________________________________
 ##OUTPUT
 [Include links to screenshots of your toolkit in action.]
