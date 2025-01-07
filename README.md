@@ -55,4 +55,10 @@ Make sure you use inputs for username and password used in flask server file (in
 
 ________________________________________
 ## OUTPUT
-[Include links to screenshots of your toolkit in action.]
+
+![output1](https://github.com/user-attachments/assets/8880d8d1-607a-422c-97fc-c3e8bbddf969)
+
+![output2](https://github.com/user-attachments/assets/18b69d6e-4d04-4c36-bd66-5b76bc9473d6)
+
+![output3](https://github.com/user-attachments/assets/c61455b7-8ec7-4de8-84ae-64667bd98f3d)
+
