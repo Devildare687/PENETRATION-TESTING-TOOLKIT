@@ -38,6 +38,7 @@ Before running the toolkit, make sure you have the following installed:
 #### 2. Starting the Toolkit
 -First, run the Flask server. Use the provided batch file server.bat to start the server. This ensures that the backend runs smoothly without needing to type in the terminal.
 This will host a local test login page (http://127.0.0.1:5000/login) for brute force simulations.
+
 -Next, launch the toolkit using the tool.bat file. It’s designed to start the tool directly, no manual commands required!
 
 #### 3. How to Test:
